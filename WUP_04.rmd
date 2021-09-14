@@ -76,3 +76,5 @@ This chart shows us that high school-graduate are different from each other, as 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+In conclusion, we discussed using a boxplot showed that individuals with a graduate, bachelors, and junior college scored better than individuals in the LT high school and high school categories. We confirmed that those who attended some form of college had a mean value of 9 or more, whereas LT high school and high school students had an average score of 8 or less. We then found that the p-value for the null hypothesis was very small, 0.000236, so it was rejected. Finally, we used the "TukeyHSD" model to elaborate with more detail and with a 95% confidence level that the LT high school-graduate and the high school-graduate categories did not cross the "0" line. This means these categories are indeed different.
