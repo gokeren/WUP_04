@@ -58,6 +58,20 @@ Individuals with a bachelor, graduate, and junior college degree have higher mea
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
+```{r}
+model1 <- aov(WORDSUM~DEGREE,data=mydata)
+summary.aov(model1)
+```
+
+The p-value is very small, and represents the chance of getting this result in the situation that the null hypothesis is actually true. The p-value is 0.000236, which means there is a very small chance for the null hypothesis to be true, therefore I reject the null hypothesis $H_0$ .
+
+```{r}
+#we specify the margins starting at the bottom and proceeding clockwise - thus 8.7 is the left side margin to hold the names of the factors
+par(mar = c(3, 16, 2, 2))
+plot(TukeyHSD(model1,conf.level=.95),las=2)
+```
+
+This chart shows us that high school-graduate are different from each other, as well as LT high school-graduate. This is because the dotted zero line doesn't run into the line for either of these categories, with 95% confidence.
 
 # Discussion and Conclusion
 
